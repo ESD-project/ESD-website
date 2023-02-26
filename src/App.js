@@ -1,5 +1,5 @@
 import Header from "./components/Header";
-
+import Footer from "./components/Footer";
 
 function App() {
   return (
@@ -8,6 +8,7 @@ function App() {
      >
      {/* <div>Coming soon</div> */}
      <Header/>
+     <Footer/>
     </div>
   );
 }
