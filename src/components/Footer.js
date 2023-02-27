@@ -1,7 +1,7 @@
 import logo from "../images/logo.png"
 const Footer = () => {
     return ( 
-        <div className="flex flex-col p-12 w-full bg-gray-300 mt-4 ">
+        <div className="flex flex-col p-12 w-full bg-gray-300 mt-4  ">
             <div className="w-100% flex flex-row justify-between">
                 <div className="w-30% flex flex-col space-y-2">
                     <div>

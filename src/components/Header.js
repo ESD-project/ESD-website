@@ -1,7 +1,7 @@
 import logo from "../images/logo.png"
 const Header = () => {
     return ( 
-        <div className="w-full flex flex-row justify-between bg-gray-300 absolute">
+        <div className="w-full flex flex-row justify-between bg-gray-300 relative">
             <div>
              <img src={logo} className="w-24 mt-2" alt="" />
             </div>
