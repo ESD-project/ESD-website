@@ -2,6 +2,7 @@ import Header from "./components/Header";
 import Footer from "./components/Footer";
 import HomeScreen from "./components/HomeScreen";
 import BookingComponent from "./components/BookingComponent";
+import HowItWorks from "./components/HowItWorks";
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
      <Header/>
      <HomeScreen/>
      <BookingComponent/>
+     <HowItWorks/>
      <Footer/>
     </div>
   );
