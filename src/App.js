@@ -1,6 +1,7 @@
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 import HomeScreen from "./components/HomeScreen";
+import BookingComponent from "./components/BookingComponent";
 
 function App() {
   return (
@@ -10,6 +11,7 @@ function App() {
      {/* <div>Coming soon</div> */}
      <Header/>
      <HomeScreen/>
+     <BookingComponent/>
      <Footer/>
     </div>
   );
