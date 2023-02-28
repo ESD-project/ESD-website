@@ -10,7 +10,7 @@ import Toyota from "../images/Toyota.png";
 
 const HowItWorks = () => {
     return ( 
-        <div className="w-full mt-24 flex flex-col space-y-8 ">
+        <div className="w-full mt-24 flex flex-col space-y-8 pb-8 ">
             <div>
                 <ul className="flex flex-row space-x-4 justify-center">
                     <li><img src={BMW} className="mt-4" alt="" /></li>
