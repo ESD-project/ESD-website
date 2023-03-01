@@ -4,19 +4,28 @@ import HomeScreen from "./components/HomeScreen";
 import BookingComponent from "./components/BookingComponent";
 import HowItWorks from "./components/HowItWorks";
 import Cars from "./components/Cars";
+import WhyChooseUs from "./components/WhyChooseUs";
+import CarGallery from "./components/CarGallery";
+import Testimonies from "./components/Testimonies";
+import LogIn from "./components/LogIn";
 
 function App() {
   return (
     <div
-    //  className="text-center text-3xl font-medium m-auto w-50% mt-64"
+    
      >
-     {/* <div>Coming soon</div> */}
+    
      <Header/>
      <HomeScreen/>
      <BookingComponent/>
      <HowItWorks/>
      <Cars/>
+     <WhyChooseUs/>
+     <CarGallery/>
+     <Testimonies/>
+     {/* <LogIn/> */}
      <Footer/>
+    
     </div>
   );
 }
