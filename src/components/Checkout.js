@@ -1,11 +1,10 @@
 import blackcar from "../images/blacksaloncar.png"
-const Checkout = ({visible,onClose}) => {
-    if (!visible) return null;
-    const handleOnBackDropClick = (e) => {
-        if (e.target.id === "backdrop") onClose && onClose();
-      };
+import Modal from "./Modal";
+const Checkout = ({ closeFn = () => null, open = false }) => {
+    
     return ( 
-        <div className="flex flex-col w-3/5 bg-white z-10 m-auto space-y-8 py-12  border-2 rounded-md justify-center   border-green-500">
+        <Modal open={open}>
+        <div className="flex flex-col w-3/5 bg-white z-10 m-auto fixed top-0 left-0 right-0 space-y-8 py-12  border-2 rounded-md justify-center   border-green-500">
             <div>
             <div className="flex flex-row space-x-12 justify-center ">
             <div className="flex flex-col space-y-4">
@@ -113,9 +112,10 @@ const Checkout = ({visible,onClose}) => {
             </div>
             </div>
             <div className="">
-            <div className="text-white bg-black rounded-sm m-auto w-32 p-1 flex float-right mx-8 text-sm">Proceed to reserve</div>
+            <button className="text-white bg-black rounded-sm m-auto w-32 p-1 flex float-right mx-8 text-sm " type="button" data-modal="confirm-payment">Proceed to reserve</button>
         </div>
         </div>
+        </Modal>
      );
 }
  

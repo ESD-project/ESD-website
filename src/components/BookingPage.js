@@ -1,16 +1,27 @@
 import blackcar from "../images/blacksaloncar.png"
 import Checkout from "./Checkout";
 import { useState } from "react";
-const BookingPage = ({visible,onClose}) => {
-    const [showCheckoutModal,setShowCheckoutModal] = useState(false);
-    const [showBookingForm,setShowBookingForm] = useState(false);
-    if (!visible) return null;
-    const handleOnBackDropClick = (e) => {
-        if (e.target.id === "backdrop") onClose && onClose();
-      };
-    
-    return ( 
-        <div className="flex flex-row w-3/5 bg-white z-10 m-auto space-x-4 py-12  border-2 rounded-md justify-center   border-green-500">
+import Modal from "./Modal";
+const BookingPage = ({ closeFn = () => null, open = false }) => {
+    // const [showCheckoutModal,setShowCheckoutModal] = useState(false);
+    // const [showBookingForm,setShowBookingForm] = useState(true);
+    // if (!visible) return null;
+    // const handleOnBackDropClick = (e) => {
+    //     if (e.target.id === "backdrop")  onClose();
+    //   };
+    //   const handleClick = event => {
+    //     // 👇️ toggle shown state
+    //     // setShowBookingForm(current => !current);
+    //     setShowBookingForm(false);
+    //     // setShowCheckoutModal(true);
+        
+        
+    //   };
+
+     
+    return  ( 
+        <Modal open={open}>
+        <div className="flex flex-row w-3/5 bg-white z-10 m-auto fixed top-64 left-0 right-0  space-x-4 py-12  border-2 rounded-md justify-center   border-green-500">
             <div className="flex flex-col space-y-4">
                 <div className="flex flex-row space-x-4 ">
                     <div className="flex flex-col space-y-1">
@@ -62,14 +73,17 @@ const BookingPage = ({visible,onClose}) => {
 
                 </div>
                 <section className="border mt-2 mb-6 border-gray-400"></section>
-                <div className="bg-black text-white rounded py-1 w-48  mt-14   float-left text-center text-sm" onClick={()=> setShowBookingForm(false) }>
+                {}
+                <button className="bg-black text-white rounded py-1 w-48  mt-14   float-left text-center text-sm" type="button" data-modal="checkout" >
                     PROCEED TO CHECKOUT
-                </div>
+                </button>
+               
 
             </div>
-            <BookingPage visible={showBookingForm} onClose={() => setShowBookingForm(false)}></BookingPage>
-<Checkout visible={showCheckoutModal} onClose={()=>setShowCheckoutModal(false)  }></Checkout>
+            
+{/* <Checkout visible={showCheckoutModal}  ></Checkout> */}
         </div>
+        </Modal>
      );
 }
  
