@@ -3,6 +3,7 @@ import { useState } from "react";
 import LogIn from "./LogIn";
 const Header = () => {
     const [showLogin, setShowLogin] = useState(false);
+    
     return ( 
         <div className="w-full flex flex-row justify-between bg-gray-300 bg-gradient-to-r from-zinc-800 to-zinc-500 th relative">
             <div>
@@ -21,12 +22,12 @@ const Header = () => {
                      >
                         Log In</li>
                 </ul>
-                <LogIn visible={showLogin} onClose={() => setShowLogin(false)}></LogIn>
+                {/* <LogIn visible={showLogin} onClose={() => setShowLogin(false)}></LogIn> */}
             </div>
             
          
 
-
+            <LogIn visible={showLogin} onClose={() => setShowLogin(false)}></LogIn>
         </div>
      );
 }

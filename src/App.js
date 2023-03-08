@@ -8,6 +8,7 @@ import WhyChooseUs from "./components/WhyChooseUs";
 import CarGallery from "./components/CarGallery";
 import Testimonies from "./components/Testimonies";
 import LogIn from "./components/LogIn";
+import BookingPage from "./components/BookingPage";
 
 function App() {
   return (
@@ -24,6 +25,7 @@ function App() {
      <CarGallery/>
      <Testimonies/>
      {/* <LogIn/> */}
+    <BookingPage/>
      <Footer/>
     
     </div>

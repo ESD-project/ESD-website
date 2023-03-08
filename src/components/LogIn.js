@@ -7,7 +7,7 @@ const LogIn = ({visible,onClose}) => {
       };
     
     return ( 
-        <div id="backdrop " onClick={handleOnBackDropClick} className="  fixed justify-center items-center  bg-white   h-96    w-96  border-2 rounded-md flex flex-row   border-green-500">
+        <div id="backdrop " onClick={handleOnBackDropClick} className=" fixed    z-10 bg-white   h-96    w-96 m-auto  border-2 rounded-md flex flex-row   border-green-500">
             {/* <div className="w-60% px-32 bg-green-500 ">
               <div ><img src={logo} alt="" className="mt-52" /></div>
             </div> */}
