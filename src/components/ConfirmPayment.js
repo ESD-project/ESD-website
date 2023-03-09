@@ -26,6 +26,9 @@ const ConfirmPayment = ({ closeFn = () => null, open = false }) => {
                 <div className="font-normal -mt-1">I HAVE READ AND ACCEPTED THE
                  <span className="text-red-500"> RENTAL TERMS AND CONDITIONS.</span> </div>
             </div>
+            <div className="flex float-right ">
+            <button className="text-white bg-black rounded-sm m-auto mr-16 w-32 p-1  text-center  text-sm " type="button" data-modal="success-page" >Reserve</button>
+            </div>
         </div>
         </Modal>
      );
