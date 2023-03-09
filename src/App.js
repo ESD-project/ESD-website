@@ -13,6 +13,9 @@ import ConfirmPayment from "./components/ConfirmPayment";
 import ModalManager from "./ModalManager";
 import React, { useState } from "react";
 import { BrowserRouter } from "react-router-dom";
+import Filter from "./components/Filter";
+import ExploreCars from "./components/ExploreCars";
+
 
 function App() {
   const [modalOpen, setModal] = useState(false);
@@ -42,9 +45,8 @@ function App() {
         <CarGallery />
         <Testimonies />
         <ModalManager closeFn={closeModal} modal={modalOpen} />
-        {/* <LogIn/> */}
-        {/* <BookingPage/>
-    <ConfirmPayment/> */}
+       {/* <ExploreCars/> */}
+
         <Footer />
       </div>
     </BrowserRouter>

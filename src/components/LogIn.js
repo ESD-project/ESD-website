@@ -1,13 +1,12 @@
 import logo from "../images/logo.png";
+import Modal from "./Modal";
 import { useState } from "react";
-const LogIn = ({visible,onClose}) => {
-    if (!visible) return null;
-    const handleOnBackDropClick = (e) => {
-        if (e.target.id === "backdrop") onClose && onClose();
-      };
+const LogIn = ({ closeFn = () => null, open = false }) => {
+    
     
     return ( 
-        <div id="backdrop " onClick={handleOnBackDropClick} className=" fixed top-64 left-0 right-0   z-10 bg-white   h-96    w-96 m-auto  border-2 rounded-md flex flex-row   border-green-500">
+        <Modal open={open}>
+        <div  className=" fixed top-64 left-0 right-0   z-10 bg-white   h-96    w-96 m-auto  border-2 rounded-md flex flex-row   border-green-500">
             {/* <div className="w-60% px-32 bg-green-500 ">
               <div ><img src={logo} alt="" className="mt-52" /></div>
             </div> */}
@@ -35,12 +34,13 @@ const LogIn = ({visible,onClose}) => {
                         Have no account yet?
                     </div>
                     <div>
-                    <button className="text-blue-700 bg-white border border-blue-700 text-xs rounded-lg p-1 w-full ">Register</button>
+                    <button className="text-blue-700 bg-white border border-blue-700 text-xs rounded-lg p-1 w-full " type="button" data-modal="register" >Register</button>
                     </div>
                 </div>
             </div>
 
         </div>
+        </Modal>
 
      );
 }

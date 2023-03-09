@@ -1,8 +1,9 @@
 import logo from "../images/logo.png"
 import { useState } from "react";
 import LogIn from "./LogIn";
+import Modal from "./Modal";
 const Header = () => {
-    const [showLogin, setShowLogin] = useState(false);
+   
     
     return ( 
         <div className="w-full flex flex-row justify-between bg-gray-300 bg-gradient-to-r from-zinc-800 to-zinc-500 th relative">
@@ -18,16 +19,17 @@ const Header = () => {
                     <li className="text-center text-white">Testimonial</li>
                     <li className="text-center text-white">Register</li>
                     <li className="text-center  w-16 bg-white rounded-sm text-black px-2 py-0.5"
-                     onClick={()=>setShowLogin(true)}
+                    
+                    type="button" data-modal="login"
                      >
                         Log In</li>
                 </ul>
-                {/* <LogIn visible={showLogin} onClose={() => setShowLogin(false)}></LogIn> */}
+                
             </div>
             
          
 
-            <LogIn visible={showLogin} onClose={() => setShowLogin(false)}></LogIn>
+            
         </div>
      );
 }
