@@ -15,6 +15,7 @@ import React, { useState } from "react";
 import { BrowserRouter } from "react-router-dom";
 import Filter from "./components/Filter";
 import ExploreCars from "./components/ExploreCars";
+import ScreenSwitchManager from "./components/ScreenswitchManager";
 
 
 function App() {
@@ -37,13 +38,14 @@ function App() {
     <BrowserRouter>
       <div onClick={openModal}>
         <Header />
-        <HomeScreen />
+        {/* <HomeScreen />
         <BookingComponent />
         <HowItWorks />
         <Cars />
         <WhyChooseUs />
         <CarGallery />
-        <Testimonies />
+        <Testimonies /> */}
+        <ScreenSwitchManager/>
         <ModalManager closeFn={closeModal} modal={modalOpen} />
        {/* <ExploreCars/> */}
 
