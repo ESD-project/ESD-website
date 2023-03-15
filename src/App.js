@@ -38,20 +38,20 @@ function App() {
     <BrowserRouter>
       <div onClick={openModal}>
         <Header />
-        {/* <HomeScreen />
+         {/* <HomeScreen />
         <BookingComponent />
         <HowItWorks />
         <Cars />
         <WhyChooseUs />
         <CarGallery />
-        <Testimonies /> */}
+        <Testimonies />  */}
         <ScreenSwitchManager/>
         <ModalManager closeFn={closeModal} modal={modalOpen} />
        {/* <ExploreCars/> */}
 
         <Footer />
       </div>
-    </BrowserRouter>
+    // </BrowserRouter>
   );
 }
 
