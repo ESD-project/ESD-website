@@ -1,6 +1,7 @@
 import BookingPage from "./BookingPage";
 import { useState } from "react";
 import Checkout from "./Checkout";
+import {Link} from 'react-router-dom';
 const HomeScreen = ({}) => {
   // const [showCheckoutModal,setShowCheckoutModal] = useState(false);
   // const [showBookingForm,setShowBookingForm] = useState(false);
@@ -23,7 +24,7 @@ const HomeScreen = ({}) => {
             type="button"
             data-modal="booking-page"
           >
-            Booking now
+            <Link to={'/explore'}>Booking Now</Link>
           </button>
           <div className="w-32 rounded text-white bg-black p-2 text-center">
             See all cars

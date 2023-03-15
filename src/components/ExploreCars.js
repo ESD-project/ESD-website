@@ -5,9 +5,9 @@ import Cars from "./Cars";
 import Filter from "./Filter";
 const ExploreCars = () => {
     return ( 
-        <div className="flex flex-col ">
-            <div className="text-2xl font-bold">Explore Cars</div>
-            <div className="text-xl font-">Browse by car type</div>
+        <div className="flex flex-col  ">
+            <div className="text-2xl font-bold p-6">Explore Cars</div>
+            <div className="text-xl font-medium px-6">Browse by car type</div>
             <CarTypes/>
             <div className="mt-24 mb-24">
             <BookingComponent/>
